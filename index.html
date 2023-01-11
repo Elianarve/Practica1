@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Convenio Salarial</title>
+    <link rel="stylesheet" href="../Practica1/css/styles.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../Practica1/js/script.js"></script>
+</head>
+
+<body>
+    <!-- <div class="container" style="text-align: center;">
+        <h2>Crear Aplicacion</h2>
+        Encapsulada y con estructura responsive, accesible en el manejo de los distintos dispositivos,realizar la
+        siguiente app:<br>
+
+        1. Cambio de convenio en una empresa (Plan de igualdad).<br>
+        2. salarios por debajo de 15.000/ anuales => incremento de un 1.5%.<br>
+        3. salarios por encima de 15.000/ anuales => incremneto de un 0.5%.<br>
+        4. por cada hijo, se abonara un 0.2 de su salario INICIAL.<br>
+        5. por ser mujer subida de 0.1% de su salario inicial.<br>
+
+        Cada trabajador pueda acceder a conocer cual es su mejora salarial con respecto al nuevo convenio.
+
+        valoraciones*<br>
+        // En un formulario.
+        meter sueldo
+        salario
+        numero de hijos
+    </div> -->
+    <div class="container centrar">
+        <h2>INCREMENTO SALARIAL</h2>
+        <form>
+            <div>
+                <label>Salario Anual:</label>
+                <input type="text" class="" id="salarioAnual">
+            </div><br>
+            <div>
+                <label class="">Sexo:</label>
+                <select id="sexo">
+                    <option value="mujer">Mujer</option>
+                    <option value="hombre">Hombre</option>
+                </select>                
+            </div><br>
+            <div class="mb-3">
+                <label class="">Nº hijos:</label>
+                <input type="number" id="hijos" min='0' max="15">
+            </div><br>
+            <div class="button">
+                <input type="Reset" id = 'btnLimpiar' value="Limpiar">
+                <button onclick='calculoSubida()' type="button" class="btn">Calcular</button>
+                <h4 id="resultado" class="button"></h4>
+            </div>
+    </div>
+    </form>
+
+</body>
+</html>
